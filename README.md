@@ -1,4 +1,4 @@
-# E2EE PYTHON example
+# PayU Hub E2EE example
 This repository is based on the implementation of a simple python implementation of PayU Hub [End To End Encryption](https://developers.paymentsos.com/docs/security/e2ee.html).
 
 ## Installation
@@ -28,7 +28,7 @@ This repository is based on the implementation of a simple python implementation
      ### macOS/Linux
     `python -m pip install -r requirements.txt` or `python3 -m pip install -r requirements.txt`
 
-    # Linux (Debian)
+    ### Linux (Debian)
     `apt-get install python3-tk`
     `python3 -m pip install m-r requirements.txt`
 
