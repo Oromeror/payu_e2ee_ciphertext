@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.status import HTTP_200_OK
 from routes import app_payu_hub_e2ee_card
 #from database import mysql
 from settings import ENVIRONMENT
@@ -11,7 +12,12 @@ if ENVIRONMENT == 'prod':
 else:
     origins = ['https://zapacommerce-development.web.app', 'http://localhost:4200']
 
-@app.get('/')
+@app.get(
+    path='/',
+    status_code=HTTP_200_OK,
+    tags=['Welcome'],
+    summary='welcome":"API is working.')
+    
 def read_root():
     return{"welcome":"API is working."}
 

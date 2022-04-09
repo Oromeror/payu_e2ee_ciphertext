@@ -19,7 +19,7 @@ app_payu_hub_e2ee_card = APIRouter()
 @app_payu_hub_e2ee_card.get(
     path='/ciphertext/{account_id}/keys/{key_name}/versions/{key_version}',
     status_code=HTTP_200_OK,
-    tags=['E2EE'],
+    tags=['Generate ciphertext'],
     summary="Create a card ciphertext"
 )
 
