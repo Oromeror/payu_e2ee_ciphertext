@@ -20,6 +20,9 @@ This repository is based on the implementation of a simple python implementation
 
     It should appear (venv) in the console. Whenever a new console is executed, the virtual machine has a libraries and dependencies other than those found in the normal Windows environment, this to maintain the integrity of the applications in the operating system.
 
+    linux or mac `pip install --upgrade pip` or `python3 -m pip install --upgrade pip`
+    windows `python -m pip install --upgrade pip` 
+
 - Install dependencies
 
     #### Windows (may require elevation)
@@ -44,4 +47,6 @@ This repository is based on the implementation of a simple python implementation
 
     `find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf`
 
-    for root open http://127.0.0.1:5000/
+    for root open `http://127.0.0.1:5000/`
+
+    for swagger open `http://127.0.0.1:5000/docs`

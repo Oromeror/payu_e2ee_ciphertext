@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import app_payu_hub_e2ee_card
-from database import mysql
+#from database import mysql
 from settings import ENVIRONMENT
 
 app = FastAPI()
