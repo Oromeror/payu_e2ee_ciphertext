@@ -56,7 +56,8 @@ async def create_JWE(
 
         '''
         JOSE framework use of JWE
-        Documentation: https://jose.readthedocs.io/en/latest/#f1
+        PayU Hub: https://developers.paymentsos.com/docs/security/e2ee.html
+        Javascript Object Signing and Encryption (JOSE) framework: https://jose.readthedocs.io/en/latest/#f1
         '''
 
         claims = {
