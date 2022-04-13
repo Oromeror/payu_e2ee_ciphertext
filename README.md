@@ -16,7 +16,7 @@ This repository is based on the implementation of a simple python implementation
     `source .venv/bin/activate`
 
     ### Windows:
-    `.venv\scripts\activate` or `.venv\scripts\activate.bat`
+    `.venv\scripts\activate` or `.venv\scripts\activate.bat` or navigate to route and run `activate.bat`
 
     It should appear (venv) in the console. Whenever a new console is executed, the virtual machine has a libraries and dependencies other than those found in the normal Windows environment, this to maintain the integrity of the applications in the operating system.
 

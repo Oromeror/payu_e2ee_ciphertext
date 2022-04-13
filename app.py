@@ -2,15 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.status import HTTP_200_OK
 from routes import app_payu_hub_e2ee_card
-#from database import mysql
-from settings import ENVIRONMENT
 
 app = FastAPI()
 
-if ENVIRONMENT == 'prod':
-    origins = ['https://zapacommerce.web.app']
-else:
-    origins = ['https://zapacommerce-development.web.app', 'http://localhost:4200']
+origins = ['', 'http://localhost:5000']
 
 @app.get(
     path='/',
@@ -31,7 +26,3 @@ app.add_middleware(
 
 # PayU Hub e2ee
 app.include_router(app_payu_hub_e2ee_card, prefix='/api/payu-hub')
-
-#@app.on_event('startup')
-#def connect_db():
-    #mysql.sql_conn = mysql.db_connection()
