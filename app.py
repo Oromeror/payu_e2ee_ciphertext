@@ -5,7 +5,7 @@ from routes import app_payu_hub_e2ee_card
 
 app = FastAPI()
 
-origins = ['', 'http://localhost:5000']
+origins = ['', 'http://localhost:8000']
 
 @app.get(
     path='/',
@@ -25,4 +25,5 @@ app.add_middleware(
 )
 
 # PayU Hub e2ee
-app.include_router(app_payu_hub_e2ee_card, prefix='/api/payu-hub')
+app.include_router(app_payu_hub_e2ee_card, prefix='/api')
+
